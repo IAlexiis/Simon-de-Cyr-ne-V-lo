@@ -1,0 +1,266 @@
+/* ALL */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul,
+li {
+  list-style: none;
+  text-decoration: none;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+/* Header */
+header {
+  width: 100vw;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 76px;
+}
+
+.navbar .nav-links {
+  display: flex;
+}
+
+.navbar .nav-links ul {
+  display: flex;
+}
+
+.navbar .nav-links ul li {
+  margin: 0 35px;
+}
+
+header .logo {
+  width: 100px;
+}
+
+.navbar .menu-burger {
+  display: none;
+  width: 35px;
+}
+/* Sponsoring Btn */
+
+ul li .sponsoringBtn {
+  padding: 20px;
+  border: none;
+  background-color: #f99e4f;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.sponsoringBtn:hover {
+  background-color: transparent;
+  border: 1px solid #f99e4f;
+}
+
+.sponsoringBtn:hover a {
+  color: #f99e4f;
+}
+
+.sponsoringBtn a {
+  color: white;
+}
+
+/* Donation btn */
+
+ul li .donationBtn {
+  padding: 20px;
+  border: none;
+  background-color: #bc2931;
+  text-transform: uppercase;
+}
+
+.donationBtn:hover {
+  background-color: transparent;
+  border: 1px solid #bc2931;
+}
+
+.donationBtn:hover a {
+  color: #bc2931;
+}
+
+.donationBtn a {
+  color: white;
+}
+
+.logoHeader {
+  width: 100px;
+}
+
+@media screen and (max-width: 768px) {
+  /* HEADER */
+  .navbar .logo {
+    position: absolute;
+    top: 2px;
+    left: 30px;
+  }
+
+  .navbar .menu-burger {
+    display: block;
+    position: absolute;
+    top: 20px;
+    right: 50px;
+    width: 35px;
+  }
+
+  .navbar .nav-links {
+    position: absolute;
+    background-color: #535353;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: -100%;
+    transition: all 0.5s ease;
+  }
+
+  .nav-links.mobile-menu {
+    margin-left: 0;
+  }
+
+  .navbar .nav-links ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .navbar .nav-links ul li {
+    margin: 25px 0;
+    font-size: 1.2em;
+  }
+  /* FOOTER */
+
+  footer {
+    display: flex;
+    justify-content: center;
+  }
+  .footer-section-3 ul li a {
+    text-decoration: none;
+    color: black;
+  }
+
+  .footer-section-4 ul li a {
+    text-decoration: none;
+    color: black;
+  }
+
+  footer {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .footer-section-1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    background-color: #f5f3f3;
+    padding: 30px 10px;
+    gap: 20px;
+  }
+
+  .footer-section-1 h3 {
+    font-size: 30px;
+  }
+
+  .footer-section-1 p {
+    font-weight: bold;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  }
+
+  .footer-section-2 {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    text-align: center;
+    background-color: #f5f3f3;
+    padding: 0px 0px 30px 0px;
+  }
+
+  .footer-section-2 button {
+    padding: 15px;
+    background-color: rgb(174, 0, 0);
+    color: white;
+    border: none;
+  }
+
+  .footer-section-2 p {
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+      sans-serif;
+  }
+
+  .footer-section-3 ul li a {
+    text-decoration: none;
+    color: black;
+  }
+
+  .footer-section-3 {
+    background-color: rgb(174, 0, 0);
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 50px 10px;
+  }
+
+  .footer-section-3 ul {
+    display: flex;
+    gap: 50px;
+    flex-direction: column;
+  }
+
+  .footer-section-3 ul li a {
+    color: white;
+    font-weight: bold;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+      "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  }
+
+  .footer-section-3 hr {
+    display: none;
+  }
+
+  .footer-section-4 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+  }
+
+  .footer-section-4 ul {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .footer-section-4 hr {
+    display: none;
+  }
+
+  .footer-section-4 ul li a {
+    text-decoration: none;
+    color: black;
+  }
+
+  /* FOOTER */
+  /* FOOTER */
+}
