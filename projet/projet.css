@@ -283,7 +283,7 @@ section span {
 .section2Main h2,
 .section3Main h2,
 .section4Main h2,
-.section5Main h2 {
+.section6Main h2 {
   color: #2864ba;
   padding: 50px;
   font-weight: bold;
@@ -347,7 +347,115 @@ section span {
 }
 
 /* Section 5 */
+.section5Main .icon2 {
+  position: relative;
+  left: 44%;
+  top: -80px;
+  width: 230px;
+  margin-bottom: -8em;
+}
+.section5Main h2 {
+  color: #2864ba;
+  padding: 50px 50px 10px;
+  font-weight: bold;
+  font-size: 48px;
+}
 
+.section5Main .icon2 img {
+  width: 230px;
+}
+
+.section5Main .pS5 {
+  position: absolute;
+  top: 104px;
+  left: 17%;
+  color: white;
+  font-family: "Simon de Cyrene";
+  font-size: 23px;
+}
+
+.containerpS5-2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.section5Main .pS5-2 {
+  text-align: center;
+  width: 94%;
+}
+
+/* Section 6 */
+.section6Main p {
+  padding-left: 50px;
+}
+
+/* Tableau */
+.table-container {
+  margin: 30px 0 10px 50px;
+  font-family: "Arial", sans-serif;
+  overflow: hidden;
+  border-radius: 33px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 60%;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+body > main > section.section6Main > div > table > tbody > tr:nth-child(1),
+body > main > section.section6Main > div > table > tbody > tr:nth-child(10) {
+  background: #2764ba;
+}
+
+thead {
+  background-color: #2764ba;
+  color: white;
+}
+
+.table-container td {
+  border: 3px solid #2764ba;
+}
+
+.botTr td {
+  color: white;
+}
+
+th,
+td {
+  padding: 10px;
+  border: 1px solid #ddd;
+  text-align: left;
+}
+
+th {
+  height: 50px;
+  border: 3px solid #2764ba;
+  color: white;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+tbody tr:hover {
+  background-color: #ddd;
+}
+
+tfoot {
+  background-color: #2764ba;
+  color: white;
+}
+
+tfoot td {
+  font-weight: bold;
+}
+
+tfoot tr {
+  height: 50px;
+}
 /*FOOTER*/
 footer {
   display: flex;
