@@ -15,22 +15,49 @@ a {
   color: black;
 }
 
+h1,
+h2 {
+  font-family: "Simon de Cyrene";
+}
+
+p {
+  font-family: "Century Gothic";
+}
+
 .satisfy-regular {
   font-family: "Satisfy", cursive;
   font-weight: 400;
   font-style: normal;
 }
+/* BtnUp */
 
-/* Carte intéractive */
-
-.leaflet-container {
-  height: 100%;
-  width: 100%;
+.boutton-up {
+  position: fixed;
+  width: 50px;
+  height: 50px;
+  background-color: #2864ba;
+  border: solid 2px #ffffff;
+  border-radius: 10px;
+  bottom: 20px;
+  right: 20px;
+  z-index: 10;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  visibility: hidden;
 }
 
-div#map {
-  width: 100%;
-  height: 100%;
+.boutton-up.show {
+  visibility: visible;
+}
+
+.boutton-up img {
+  width: 30px;
+}
+
+.boutton-up:hover {
+  background-color: rgb(46, 115, 211);
 }
 
 /* Header */
@@ -38,6 +65,8 @@ header {
   width: 100vw;
   position: fixed;
   background-color: white;
+  z-index: 100;
+  border-bottom: solid 1px black;
 }
 
 .navbar {
@@ -61,6 +90,7 @@ header {
 header .logo {
   width: 170px;
   transition: all 0.5s ease;
+  cursor: pointer;
 }
 
 header .logo:hover {
@@ -73,26 +103,27 @@ header .logo:hover {
 }
 
 /* Buttons */
-.sponsoringBtn,
-.donationBtn {
+.donationBtn,
+.joinUsBtn {
   position: relative;
-  padding: 20px;
+  padding: 13px;
   border: 2px solid transparent;
   cursor: pointer;
   transition: all 0.3s ease;
   display: inline-block;
   color: white;
   text-transform: uppercase;
+  text-align: center;
 }
 
-.sponsoringBtn {
-  background-color: #f99e4f;
+.joinUsBtn {
+  background-color: #2864ba;
 }
 
-.sponsoringBtn:hover {
+.joinUsBtn:hover {
   background-color: white;
-  border: 1px solid #f99e4f;
-  color: #f99e4f;
+  border: 1px solid #2864ba;
+  color: #2864ba;
   transform: translate(0, 7px);
 }
 
@@ -108,7 +139,7 @@ header .logo:hover {
 }
 
 .donationBtn::after {
-  content: url(Images/coeur.svg);
+  content: url(/Images/coeur.svg);
   position: absolute;
   display: block;
   width: 38px;
@@ -126,6 +157,7 @@ header .logo:hover {
   position: relative;
   text-transform: uppercase;
   font-weight: bold;
+  font-size: 12px;
 }
 
 .navbar .headerAnimation::before {
@@ -150,20 +182,129 @@ header .logo:hover {
 main {
   padding-top: 100px;
 }
-div#map {
-  height: 800px;
+
+.containerImage1 {
+  position: relative;
+  width: 100%;
+  height: 17em;
+  overflow: hidden;
+}
+
+.containerImage1 .image1 {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 0 -50px;
+  filter: blur(3px);
+}
+
+.containerImage1 .text-overlay {
+  font-family: "Simon de Cyrene";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
+  font-size: 4em;
+}
+
+/* Section 1 */
+section span {
+  color: #2864ba;
+}
+
+.section1Main {
+  display: flex;
+  flex-direction: column;
+}
+
+.section1Main h2,
+.section2Main h2,
+.section3Main h2 {
+  color: #2864ba;
+  padding: 50px;
+  font-weight: bold;
+  font-size: 48px;
+}
+
+.section1Main p {
+  padding: 0 0 40px 90px;
+  text-align: start;
+  width: 84em;
+  font-weight: bold;
+}
+
+.section1Main button,
+.section2Main button,
+.section3Main button {
+  padding: 15px;
+  width: 160px;
+  align-self: center;
+  background: #2864ba;
+  border: solid 1px #2864ba;
+  color: white;
+  text-transform: uppercase;
+  font-family: "Century Gothic";
+}
+
+.section1Main button:hover,
+.section2Main button:hover,
+.section3Main button:hover {
+  background-color: white;
+  border: solid 1px #2864ba;
+  cursor: pointer;
+  color: #2864ba;
+}
+
+/* Section 2 */
+.section2Main {
+  display: flex;
+  flex-direction: column;
+}
+
+.section2Main p {
+  padding: 0 0 40px 90px;
+  text-align: justify;
+}
+
+.section2Main img {
+  width: 440px;
+  padding-left: 90px;
+}
+.section2Container {
+  display: flex;
+  align-items: center;
+}
+
+.section2Container p {
+  width: 54em;
+}
+
+/* Section 3 */
+
+.section3Main {
+  display: flex;
+  flex-direction: column;
+}
+.gallery {
+  display: flex;
+  justify-content: center;
+  gap: 100px;
+}
+.section3Main img {
+  width: 353px;
+  height: 238px;
+  object-fit: cover;
+  margin-bottom: 50px;
 }
 
 /*FOOTER*/
 footer {
   display: flex;
   justify-content: center;
-}
-
-footer {
-  display: flex;
-  justify-content: center;
   flex-direction: column;
+  margin-top: 50px;
 }
 
 .footer-section-1 {
@@ -202,11 +343,12 @@ footer {
 .footer-section-2 button {
   padding: 15px;
   background-color: #2864ba;
-  border: 2px solid #2864ba;
+  border: 1px solid #2864ba;
   color: white;
   font-family: "Century Gothic";
   font-weight: bold;
   transition: all 0.1s ease-in-out;
+  cursor: pointer;
 }
 
 .footer-section-2 button:hover {
@@ -285,7 +427,7 @@ footer {
 }
 
 .footer-section-4 ul li a:hover {
-  color: #bc2931;
+  color: #2864ba;
 }
 
 .footer-section-4 img {
@@ -299,7 +441,7 @@ footer {
   /* HEADER */
   .navbar .logo {
     position: absolute;
-    left: 0;
+    left: 30px;
   }
 
   .navbar .menu-burger {
@@ -379,7 +521,6 @@ footer {
 
   .footer-section-2 button {
     padding: 15px;
-    background-color: rgb(174, 0, 0);
     color: white;
     font-family: "Century Gothic";
     font-weight: bold;
@@ -390,7 +531,6 @@ footer {
   }
 
   .footer-section-3 {
-    background-color: rgb(174, 0, 0);
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -452,9 +592,5 @@ footer {
 
   .footer-section-3 ul {
     gap: 30px;
-  }
-
-  .navbar .headerAnimation {
-    color: red;
   }
 }

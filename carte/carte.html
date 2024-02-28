@@ -4,45 +4,60 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Simon de Cyrène</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="carte.css">
     <link rel="shortcut icon" type="image/x-icon" href="docs/images/favicon.ico" />
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
         integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
     <link rel="stylesheet" href="https://unpkg.com/leaflet-routing-machine@latest/dist/leaflet-routing-machine.css" />
-    <link rel="stylesheet" href="style.css" />
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
         integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
     <script src="https://unpkg.com/leaflet-routing-machine@latest/dist/leaflet-routing-machine.js"></script>
+    <title>Carte Intéractive</title>
 </head>
 
 <body>
-
+    <!-- Button up -->
+    <div class="boutton-up">
+        <img src="/Images/chevron-up-svgrepo-com.svg" alt="">
+    </div>
     <header>
-        <nav class="navbar">
-            <img class="logo" src="/Images/SimonDeCyrene.png" alt="logo">
+        <nav class=" navbar">
+            <a href="/accueil/index.html"><img class="logo" src="/Images/SimonDeCyrene.png" alt="logo"></a>
             <div class="nav-links mobile-menu">
                 <ul>
-                    <li><a href="#" class="headerAnimation">Ce projet </a></li>
-                    <li><a href="#" class="headerAnimation">Galerie photos</a></li>
-                    <li><a href="#" class="sponsoringBtn">Sponsoring</a></li>
+                    <li><a href="/projet/projet.html" class="headerAnimation">Notre projet </a></li>
+                    <li><a href="/photos/photos.html" class="headerAnimation">Photos</a></li>
+                    <li><a href="carte.html" class="headerAnimation">Carte</a></li>
+                    <li><a href="/temoignages/temoignages.html" class="headerAnimation">Témoignages</a></li>
+                    <li><a href="/quiSommesNous/quiSommesNous.html" class="headerAnimation">Qui sommes-nous ?</a></li>
+                    <li><a href="#" class="joinUsBtn">Nous rejoindre</a></li>
                     <li><a href="#" class="donationBtn">Faire un don</a></li>
                 </ul>
             </div>
-            <img src="Images/burgermenu.png" alt="icon burger menu" class="menu-burger to-left-bottom">
-
+            <img src="/Images/burgermenu.png" alt="icon burger menu" class="menu-burger ">
         </nav>
     </header>
 
     <main>
+        <div class="containerImage1">
+            <img src="/Images/canape.jpg" alt="image évènement" class="image1">
+            <div class="blur-mask">
+                <h1 class="text-overlay">Simon de Cyrène à vélo</h1>
+            </div>
+        </div>
 
-        <!-- <div id="map">dd</div>
-        <div id="mousePosition"></div> -->
+        <div class="container">
+            <h2>Carte</h2>
+            <p>étape 2 : Vienne - Avignon 2024</p>
+        </div>
+        <div class="containerMap">
+
+            <div id="map">dd</div>
+            <div id="mousePosition"></div>
+        </div>
 
     </main>
+
 
     <footer>
         <section class="footer-section-1">
@@ -97,9 +112,9 @@
                 <hr>
                 <li>
                     <div class="pycto">
-                        <a href="http://">Suivez-nous <img src="Images/Pycto_Fb.svg" alt=""> <img
-                                src="Images/Pycto_Tw.svg" alt="">
-                            <img src="Images/logo_linkedin.svg" alt=""></a>
+                        <a href="http://">Suivez-nous <img src="/Images/Pycto_Fb.svg" alt=""> <img
+                                src="/Images/Pycto_Tw.svg" alt="">
+                            <img src="/Images/logo_linkedin.svg" alt=""></a>
                     </div>
                 </li>
                 <hr>
@@ -109,8 +124,8 @@
             </ul>
         </section>
     </footer>
-    <script src="script.js"></script>
-
+    <script src="/script.js"></script>
+    <script src="/map.js"></script>
 </body>
 
 </html>

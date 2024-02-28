@@ -1,0 +1,377 @@
+/* Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+h1,
+h2 {
+  font-family: "Simon de Cyrene";
+}
+
+p {
+  font-family: "Century Gothic";
+}
+
+/* BtnUp */
+
+.boutton-up {
+  position: fixed;
+  width: 50px;
+  height: 50px;
+  background-color: #2864ba;
+  border: solid 2px #ffffff;
+  border-radius: 10px;
+  bottom: 20px;
+  right: 20px;
+  z-index: 10;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  visibility: hidden;
+}
+
+.boutton-up.show {
+  visibility: visible;
+}
+
+.boutton-up img {
+  width: 30px;
+}
+
+.boutton-up:hover {
+  background-color: rgb(46, 115, 211);
+}
+
+/* Carte intéractive */
+
+.leaflet-container {
+  height: 100%;
+  width: 100%;
+}
+
+div#map {
+  width: 100%;
+  height: 100%;
+}
+
+/* Header */
+header {
+  width: 100vw;
+  position: fixed;
+  background-color: white;
+  z-index: 100;
+  border-bottom: solid 1px black;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 76px;
+  padding: 50px;
+}
+
+.navbar .nav-links ul {
+  display: flex;
+  align-items: center;
+}
+
+.navbar .nav-links ul li {
+  margin: 0 35px;
+  font-family: "Century Gothic";
+}
+
+header .logo {
+  width: 170px;
+  transition: all 0.5s ease;
+  cursor: pointer;
+}
+
+header .logo:hover {
+  transform: scale(1.1);
+}
+
+.navbar .menu-burger {
+  display: none;
+  width: 35px;
+}
+
+/* Buttons */
+.donationBtn,
+.joinUsBtn {
+  position: relative;
+  padding: 13px;
+  border: 2px solid transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: inline-block;
+  color: white;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.joinUsBtn {
+  background-color: #2864ba;
+}
+
+.joinUsBtn:hover {
+  background-color: white;
+  border: 1px solid #2864ba;
+  color: #2864ba;
+  transform: translate(0, 7px);
+}
+
+.donationBtn {
+  background-color: #bc2931;
+  border: 2px solid #bc2931;
+}
+
+.donationBtn:hover {
+  background-color: transparent;
+  border: 1px solid #bc2931;
+  color: #bc2931;
+}
+
+.donationBtn::after {
+  content: url(/Images/coeur.svg);
+  position: absolute;
+  display: block;
+  width: 38px;
+  top: -10px;
+  right: -20px;
+  transition: all 0.2s ease-in-out;
+}
+
+.donationBtn:hover::after {
+  transform: translate(0, -10px);
+}
+
+/* Animation on nav a */
+.navbar .headerAnimation {
+  position: relative;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 12px;
+}
+
+.navbar .headerAnimation::before {
+  content: "";
+  position: absolute;
+  display: block;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%) scale(0);
+  height: 2px;
+  width: 100%;
+  transition: transform 0.4s ease;
+  background-color: #bc2931;
+}
+
+.navbar a:hover::before {
+  transform: translateX(-50%) scale(1);
+}
+
+/* Main */
+main {
+  padding-top: 100px;
+}
+.containerImage1 {
+  position: relative;
+  width: 100%;
+  height: 17em;
+  overflow: hidden;
+}
+
+.containerImage1 .image1 {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 0 -50px;
+  filter: blur(3px);
+}
+
+.containerImage1 .text-overlay {
+  font-family: "Simon de Cyrene";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
+  font-size: 4em;
+}
+
+main .container {
+  padding-left: 100px;
+}
+
+main .container h2 {
+  color: #2864ba;
+  padding: 50px 50px 0 0;
+  font-weight: bold;
+  font-size: 48px;
+}
+
+main .container p {
+  text-transform: uppercase;
+  padding: 10px 0;
+  color: #737373;
+}
+div#map {
+  height: 800px;
+  z-index: 1;
+}
+
+.containerMap {
+  padding: 0 100px 10px 100px;
+}
+
+/*FOOTER*/
+footer {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding-top: 50px;
+}
+
+.footer-section-1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  background-color: #f5f3f3;
+  padding: 30px 10px;
+  gap: 20px;
+}
+
+.footer-section-1 h3 {
+  font-size: 30px;
+  font-family: "satisfy";
+}
+
+.footer-section-1 p {
+  font-weight: bold;
+  font-family: "Century Gothic";
+  font-size: 18px;
+}
+
+.footer-section-2 {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+  text-align: center;
+  background-color: #f5f3f3;
+  padding: 0px 0px 30px 0px;
+}
+
+.footer-section-2 button {
+  padding: 15px;
+  background-color: #2864ba;
+  border: 1px solid #2864ba;
+  color: white;
+  font-family: "Century Gothic";
+  font-weight: bold;
+  transition: all 0.1s ease-in-out;
+  cursor: pointer;
+}
+
+.footer-section-2 button:hover {
+  background-color: white;
+  color: #2864ba;
+}
+
+.footer-section-2 p {
+  font-family: "Century Gothic";
+}
+
+.footer-section-3 {
+  background-color: #2864ba;
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  padding: 30px 10px;
+  justify-content: center;
+}
+
+.footer-section-3 hr {
+  height: 50px;
+}
+
+.footer-section-3 ul {
+  display: flex;
+  gap: 50px;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-section-3 ul li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-section-3 ul li a {
+  color: white;
+  font-weight: bold;
+  font-family: "Century Gothic";
+  transition: all 0.2s ease;
+}
+
+.footer-section-3 ul li a:hover {
+  transform: translate(0, -5px);
+}
+
+.footer-section-4 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 30px;
+}
+
+.footer-section-4 ul {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.footer-section-4 hr {
+  height: 30px;
+}
+
+.footer-section-4 ul li a {
+  text-decoration: none;
+  color: rgb(46, 46, 46);
+  font-family: "Century Gothic";
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  transition: 0.2s ease;
+}
+
+.footer-section-4 ul li a:hover {
+  color: #2864ba;
+}
+
+.footer-section-4 img {
+  width: 30px;
+}
+
+/*FOOTER*/
