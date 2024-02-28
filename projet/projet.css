@@ -386,18 +386,70 @@ section span {
 }
 
 /* Section 6 */
-.section6Main p {
+.section6Main > p {
   padding-left: 50px;
 }
 
 /* Tableau */
 .table-container {
-  margin: 30px 0 10px 50px;
+  margin: 30px 0 10px 0;
   font-family: "Arial", sans-serif;
   overflow: hidden;
   border-radius: 33px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   width: 60%;
+}
+
+.flexTC {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10em;
+}
+
+.cardDons {
+  width: 300px;
+  height: 440px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.cardDons h3 {
+  margin-top: 15px;
+  font-family: "Century Gothic";
+}
+
+.cardDons img {
+  width: 100%;
+}
+
+.cardContainer p {
+  text-align: center;
+  padding: 30px 0 30px;
+}
+
+.cardContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.cardContainer button {
+  font-family: "Century Gothic";
+  background: #bc2931;
+  padding: 13px;
+  color: white;
+  border: 1px solid #bc2931;
+  transition: all 0.2s ease;
+}
+
+.cardContainer button:hover {
+  font-family: "Century Gothic";
+  background: white;
+  padding: 13px;
+  color: #bc2931;
+  border: 1px solid #bc2931;
+  cursor: pointer;
 }
 
 table {
@@ -421,6 +473,7 @@ thead {
 
 .botTr td {
   color: white;
+  background: #2764ba;
 }
 
 th,
@@ -434,6 +487,7 @@ th {
   height: 50px;
   border: 3px solid #2764ba;
   color: white;
+  background-color: #2764ba;
 }
 
 tbody tr:nth-child(even) {
@@ -589,6 +643,16 @@ footer {
 
 .footer-section-4 img {
   width: 30px;
+}
+
+.pycto {
+  display: flex;
+
+  flex-direction: row;
+
+  align-items: center;
+
+  gap: 5px;
 }
 
 /*FOOTER*/

@@ -405,4 +405,14 @@ footer {
   width: 30px;
 }
 
+.pycto {
+  display: flex;
+
+  flex-direction: row;
+
+  align-items: center;
+
+  gap: 5px;
+}
+
 /*FOOTER*/
