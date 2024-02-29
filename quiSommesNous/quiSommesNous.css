@@ -214,7 +214,7 @@ main {
 .main-section-2 {
   display: flex;
   flex-direction: column;
-  padding: 80px 70px;
+  padding: 80px 125px;
 }
 
 .main-section-2 h1 {
@@ -227,7 +227,7 @@ main {
   display: flex;
   flex-direction: column;
   width: 185vh;
-  padding: 0 30px;
+  padding: 0 125px;
 }
 
 .text-container2 {
@@ -253,7 +253,7 @@ main {
 .main-section-3 {
   display: flex;
   flex-direction: column;
-  padding: 0 70px 80px 70px;
+  padding: 0 125px 80px;
   gap: 30px;
 }
 
@@ -299,7 +299,7 @@ main {
 .main-section-4 {
   display: flex;
   flex-direction: column;
-  padding: 0 70px 80px 70px;
+  padding: 0 70px 100px 70px;
   gap: 30px;
 }
 
@@ -354,9 +354,59 @@ main {
 
 .text-container5 > p {
   padding: 0 0 30px 0;
+  width: 100%;
 }
 
 /* SECTION 4 */
+
+.sep-container {
+  display: flex;
+  justify-content: center;
+}
+
+.separation {
+  width: 70%;
+  height: 10px;
+  border-top: solid black 2px;
+  border-bottom: none;
+  border-left: none;
+  border-right: none;
+}
+
+/* SECTION 5 */
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  padding: 40px 70px 70px 70px;
+  gap: 30px;
+}
+
+.gauche-droite {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.contact h1 {
+  font-size: 40px;
+  color: #2864ba;
+}
+
+.gauche,
+.droite {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.droite {
+  display: flex;
+  text-align: end;
+}
+
+/* SECTION 5 */
 
 /* MAIN */
 
@@ -505,3 +555,531 @@ footer {
 }
 
 /*FOOTER*/
+
+/* Media queeries */
+@media screen and (max-width: 768px) {
+  /* HEADER */
+  .navbar .logo {
+    position: absolute;
+    left: 70px;
+    top: 0;
+  }
+  .navbar .headerAnimation {
+    color: #f5f3f3;
+  }
+  .navbar .menu-burger {
+    display: block;
+    position: absolute;
+    top: 20px;
+    right: 50px;
+    width: 35px;
+  }
+
+  .navbar .nav-links {
+    position: absolute;
+    background-color: #535353;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: -100%;
+    transition: all 0.5s ease;
+  }
+
+  .nav-links.mobile-menu {
+    margin-left: 0;
+  }
+
+  .navbar .nav-links ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .navbar .nav-links ul li {
+    margin: 25px 0;
+    font-size: 1.2em;
+  }
+
+  .navbar {
+    justify-content: space-between;
+  }
+  /* main */
+  header .logo {
+    width: 100px;
+  }
+  .containerImage1 {
+    height: 8em;
+  }
+
+  .containerImage1 .text-overlay {
+    font-size: 20px;
+    width: 17rem;
+  }
+
+  .section1Main p {
+    width: 23em;
+    text-align: justify;
+    padding: 10px;
+  }
+
+  .section2Container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .section1Main h2,
+  .section2Main h2 {
+    font-size: 25px;
+    text-align: center;
+  }
+
+  .section2Main {
+    justify-content: center;
+    align-items: center;
+  }
+
+  .section2Main img {
+    padding: 0;
+    width: 150px;
+  }
+
+  .section2Main p {
+    width: 41em;
+    padding: 0 0 20px 0;
+  }
+
+  .section1Main p {
+    padding: 0 0 20px 0;
+    text-align: justify;
+    width: 42em;
+    font-weight: bold;
+  }
+
+  .section1Main {
+    justify-content: center;
+    align-items: center;
+  }
+
+  .section2Container p {
+    width: 43em;
+    padding-bottom: 20px;
+  }
+
+  .gallery {
+    align-items: center;
+    gap: 30px;
+  }
+
+  .section3Main img {
+    width: 200px;
+    height: 150px;
+    margin-bottom: 20px;
+  }
+
+  .section3Main h2 {
+    text-align: center;
+    padding: 50px 50px 20px;
+  }
+
+  /* MAIN */
+  /* MAIN */
+  main {
+    padding-top: 100px;
+  }
+
+  .containerImage1 {
+    position: relative;
+    width: 100%;
+    height: 17em;
+    overflow: hidden;
+  }
+
+  .containerImage1 .image1 {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 0 -50px;
+    filter: blur(3px);
+  }
+
+  .containerImage1 .text-overlay {
+    font-family: "Simon de Cyrene";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    font-size: 4em;
+  }
+
+  /* SECTION 2 */
+
+  .main-section-2 {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 70px 60px 70px;
+  }
+
+  .main-section-2 h1 {
+    font-size: 40px;
+    color: #2864ba;
+    padding-bottom: 30px;
+    text-align: center;
+    flex-wrap: wrap;
+  }
+
+  .text-container1 {
+    display: flex;
+    flex-direction: column;
+    padding: 0 30px;
+    text-align: center;
+    justify-content: center;
+    width: 100vh;
+  }
+
+  .text-container2 {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .text-container2 img {
+    width: 250px;
+    object-fit: contain;
+  }
+
+  .text-container3 {
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* SECTION 2 */
+
+  /* SECTION 3 */
+
+  .main-section-3 {
+    display: flex;
+    flex-direction: column;
+    padding: 0 70px 60px 70px;
+    gap: 30px;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+  }
+
+  .main-section-3 h1 {
+    font-size: 40px;
+    color: #2864ba;
+  }
+
+  .text-container4 {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .text-container4 h3 {
+    font-size: 25px;
+    width: 230px;
+    height: 100px;
+    background-image: url("/Images/1-removebg-preview.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-size: 230px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+  }
+
+  .objectif1,
+  .objectif2 {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    align-items: center;
+    padding: 0 30px;
+  }
+
+  /* SECTION 3 */
+
+  /* SECTION 4 */
+
+  .main-section-4 {
+    display: flex;
+    flex-direction: column;
+    padding: 0 70px 70px 70px;
+    gap: 30px;
+    text-align: center;
+  }
+
+  .main-section-4 h1 {
+    font-size: 40px;
+    color: #2864ba;
+  }
+
+  .main-section-4 ul {
+    display: flex;
+    flex-direction: column;
+    gap: 70px;
+  }
+
+  .main-section-4 ul li {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 30px;
+    text-align: center;
+  }
+
+  .main-section-4 ul li h3 {
+    font-size: 50px;
+    width: 400vh;
+    height: 90px;
+    background-image: url("/Images/4-removebg-preview.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-size: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+  }
+
+  .main-section-4 p {
+    width: 350vh;
+  }
+
+  .taille-main-4 p {
+    text-align: center;
+  }
+
+  .test p {
+    text-align: end;
+  }
+
+  .text-container5 {
+    padding: 0 30px;
+  }
+
+  .text-container5 > p {
+    padding: 0 0 60px 0;
+    width: 100%;
+  }
+
+  /* SECTION 4 */
+
+  .sep-container {
+    display: flex;
+    justify-content: center;
+  }
+
+  .separation {
+    width: 70%;
+    height: 10px;
+    border-top: solid black 2px;
+    border-bottom: none;
+    border-left: none;
+    border-right: none;
+  }
+
+  /* SECTION 5 */
+
+  .contact {
+    display: flex;
+    flex-direction: column;
+    padding: 40px 30px 70px 30px;
+    gap: 30px;
+  }
+
+  .gauche-droite {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .contact h1 {
+    font-size: 40px;
+    color: #2864ba;
+    text-align: center;
+  }
+
+  .gauche,
+  .droite {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .droite {
+    display: flex;
+    text-align: end;
+  }
+
+  /* SECTION 5 */
+
+  /* MAIN */
+
+  /* FOOTER */
+
+  footer {
+    display: flex;
+    justify-content: center;
+  }
+
+  .footer-section-1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    background-color: #f5f3f3;
+    padding: 30px 10px;
+    gap: 20px;
+  }
+
+  .footer-section-1 h3 {
+    font-size: 30px;
+    font-family: "satisfy";
+  }
+
+  .footer-section-1 p {
+    font-weight: bold;
+    font-family: "Century Gothic";
+  }
+
+  .footer-section-2 {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    text-align: center;
+    background-color: #f5f3f3;
+    padding: 0px 0px 30px 0px;
+  }
+
+  .footer-section-2 button {
+    padding: 15px;
+    color: white;
+    font-family: "Century Gothic";
+    font-weight: bold;
+  }
+
+  .footer-section-2 p {
+    font-family: "Century Gothic";
+  }
+
+  .footer-section-3 {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 50px 10px;
+  }
+
+  .footer-section-3 ul {
+    display: flex;
+    gap: 50px;
+    flex-direction: column;
+  }
+
+  .footer-section-3 ul li a {
+    color: white;
+    font-weight: bold;
+    font-family: "Century Gothic";
+  }
+
+  .footer-section-3 hr {
+    display: none;
+  }
+
+  .footer-section-4 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 30px;
+  }
+
+  .footer-section-4 ul {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .footer-section-4 hr {
+    display: none;
+  }
+
+  .footer-section-4 ul li a {
+    text-decoration: none;
+    color: rgb(75, 75, 75);
+    font-family: "Century Gothic";
+  }
+
+  /* FOOTER */
+}
+
+@media screen and (max-width: 320px) {
+  .text-container1 {
+    width: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .main-section-2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .main-section-3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .text-container4 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .objectif1,
+  .objectif2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+  }
+
+  .objectif2 {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .main-section-4 ul li {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .taille-main-4 {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}

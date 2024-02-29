@@ -1,10 +1,3 @@
-const menuBurger = document.querySelector(".menu-burger");
-const navLinks = document.querySelector(".nav-links");
-
-menuBurger.addEventListener("click", function () {
-  navLinks.classList.toggle("mobile-menu");
-});
-
 const depart1 = [46.21077912970491, 6.143857013562229]; /* Geneve */
 const arrivee1 = [45.756264245123226, 4.840252636937282]; /* Lyon */
 const depart2 = [45.52423409841546, 4.874838942079281]; /* Vienne */

@@ -237,10 +237,10 @@ main {
 .gallery-item-container1 {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-gap: 40px 0;
+  gap: 62px;
   text-align: center;
   justify-items: center;
-  padding: 10px 50px 50px 50px;
+  padding: 10px 125px 50px;
 }
 
 /* Section 2 */
@@ -253,10 +253,10 @@ main {
 .gallery-item-container2 {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-gap: 40px 0;
+  gap: 62px;
   text-align: center;
   justify-items: center;
-  padding: 10px 50px 50px;
+  padding: 10px 125px 50px;
 }
 
 .gallery-item {
@@ -410,3 +410,479 @@ footer {
 }
 
 /*FOOTER*/
+
+/* Media queeries */
+@media screen and (max-width: 768px) {
+  /* HEADER */
+  .navbar .logo {
+    position: absolute;
+    left: 70px;
+    top: 0;
+  }
+  .navbar .headerAnimation {
+    color: #f5f3f3;
+  }
+  .navbar .menu-burger {
+    display: block;
+    position: absolute;
+    top: 20px;
+    right: 50px;
+    width: 35px;
+  }
+
+  .navbar .nav-links {
+    position: absolute;
+    background-color: #535353;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: -100%;
+    transition: all 0.5s ease;
+  }
+
+  .nav-links.mobile-menu {
+    margin-left: 0;
+  }
+
+  .navbar .nav-links ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .navbar .nav-links ul li {
+    margin: 25px 0;
+    font-size: 1.2em;
+  }
+
+  .navbar {
+    justify-content: space-between;
+  }
+  /* main */
+
+  /* FOOTER */
+
+  footer {
+    display: flex;
+    justify-content: center;
+  }
+
+  .footer-section-1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    background-color: #f5f3f3;
+    padding: 30px 10px;
+    gap: 20px;
+  }
+
+  .footer-section-1 h3 {
+    font-size: 30px;
+    font-family: "satisfy";
+  }
+
+  .footer-section-1 p {
+    font-weight: bold;
+    font-family: "Century Gothic";
+  }
+
+  .footer-section-2 {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    text-align: center;
+    background-color: #f5f3f3;
+    padding: 0px 0px 30px 0px;
+  }
+
+  .footer-section-2 button {
+    padding: 15px;
+    color: white;
+    font-family: "Century Gothic";
+    font-weight: bold;
+  }
+
+  .footer-section-2 p {
+    font-family: "Century Gothic";
+  }
+
+  .footer-section-3 {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 50px 10px;
+  }
+
+  .footer-section-3 ul {
+    display: flex;
+    gap: 50px;
+    flex-direction: column;
+  }
+
+  .footer-section-3 ul li a {
+    color: white;
+    font-weight: bold;
+    font-family: "Century Gothic";
+  }
+
+  .footer-section-3 hr {
+    display: none;
+  }
+
+  .footer-section-4 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 30px;
+  }
+
+  .footer-section-4 ul {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .footer-section-4 hr {
+    display: none;
+  }
+
+  .footer-section-4 ul li a {
+    text-decoration: none;
+    color: rgb(75, 75, 75);
+    font-family: "Century Gothic";
+  }
+
+  /* FOOTER */
+}
+
+@media screen and (max-width: 1290px) {
+  .gallery {
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  /* Header */
+  .joinUsBtn,
+  .donationBtn {
+    padding: 10px;
+    text-align: center;
+    width: 10em;
+    font-size: 10px;
+  }
+
+  .navbar .nav-links ul li a {
+    font-size: 8px;
+  }
+
+  .navbar .nav-links ul {
+    width: 56em;
+  }
+
+  /* Main */
+
+  header .logo {
+    width: 100px;
+  }
+  .containerImage1 {
+    height: 8em;
+  }
+
+  .containerImage1 .text-overlay {
+    font-size: 20px;
+    width: 17rem;
+  }
+
+  .section2Container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .section1Container {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .containerP {
+    gap: 148px;
+  }
+
+  .icon .chevron1 {
+    position: absolute;
+    width: 15px;
+    top: 5px;
+    left: 73px;
+  }
+
+  .icon .chevron2 {
+    position: absolute;
+    width: 15px;
+    top: 5px;
+    left: 55px;
+  }
+
+  .icon .chevron3 {
+    position: absolute;
+    width: 15px;
+    top: 5px;
+    left: 34px;
+  }
+
+  .section1Main h2,
+  .section2Main h2 {
+    font-size: 25px;
+    text-align: center;
+  }
+
+  .section2Main {
+    justify-content: center;
+    align-items: center;
+  }
+
+  .section2Main img {
+    padding: 0;
+    width: 150px;
+  }
+
+  .section2Main p {
+    padding: 20px;
+  }
+
+  .section1Main p {
+    text-align: justify;
+    font-weight: bold;
+    padding: 20px;
+  }
+
+  .section1Main {
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .section2Container p {
+    padding-bottom: 20px;
+    flex-wrap: wrap;
+  }
+
+  .section2Main {
+    flex-wrap: wrap;
+  }
+  .gallery {
+    align-items: center;
+    gap: 30px;
+  }
+
+  .section3Main img {
+    width: 200px;
+    height: 150px;
+    margin-bottom: 20px;
+  }
+
+  .section3Main h2 {
+    text-align: center;
+    padding: 50px 50px 20px;
+  }
+  /* FOOTER */
+  .footer-section-3 ul {
+    gap: 30px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  /* HEADER */
+  .navbar .logo {
+    position: absolute;
+    left: 10px;
+    top: 0;
+  }
+  .navbar .headerAnimation {
+    color: #f5f3f3;
+  }
+  .navbar .menu-burger {
+    display: block;
+    position: absolute;
+    top: 20px;
+    right: 50px;
+    width: 35px;
+  }
+
+  .navbar .nav-links {
+    position: absolute;
+    background-color: #535353;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: -100%;
+    transition: all 0.5s ease;
+  }
+
+  .nav-links.mobile-menu {
+    margin-left: 0;
+  }
+
+  .navbar .nav-links ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .navbar .nav-links ul li {
+    margin: 25px 0;
+    font-size: 1.2em;
+  }
+
+  .navbar {
+    justify-content: space-between;
+  }
+  /* main */
+  header .logo {
+    width: 100px;
+  }
+  .containerImage1 {
+    height: 8em;
+  }
+
+  .gallery-container1 .gallery-item-container1 img,
+  .gallery-container1 .gallery-item-container2 img {
+    width: 300px;
+  }
+
+  .gallery-item {
+    width: 302px;
+  }
+
+  .gallery-item-container1 {
+    padding: 0;
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .gallery-container1 p {
+    padding: 8px;
+    width: 324px;
+  }
+
+  .containerImage1 .image1 {
+    object-position: 0;
+  }
+
+  .containerImage1 .image1 .gallery-item-container1,
+  .gallery-item-container2 {
+    grid-template-columns: repeat(1, 1fr);
+    padding: 10px;
+  }
+  .gallery-item-container2  {
+    padding: 10px 0;
+  }
+
+  .containerImage1 .text-overlay {
+    font-size: 20px;
+    width: 17rem;
+  }
+
+  .section1Main p {
+    text-align: justify;
+    padding: 30px;
+  }
+
+  .section1Main img {
+    padding: 0;
+    width: 150px;
+  }
+
+  .section2Container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .section1Main h2,
+  .section2Main h2 {
+    font-size: 25px;
+    text-align: center;
+  }
+
+  .section1Main h2 {
+    padding-bottom: 20px;
+  }
+
+  .section2Main {
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+  }
+
+  .section2Main img {
+    padding: 0;
+    width: 150px;
+  }
+
+  .section2Main p {
+    width: 17em;
+    padding: 0 0 20px 0;
+  }
+
+  .section1Main {
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .section2Container p {
+    width: 16em;
+    padding-bottom: 20px;
+  }
+
+  .gallery {
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .section3Main img {
+    width: 200px;
+    height: 150px;
+    margin-bottom: 10px;
+  }
+
+  .section3Main h2 {
+    text-align: center;
+  }
+
+  .section5Main .pS5-2 {
+    padding: 0 35px;
+  }
+  .section5Main .icon2 {
+    left: 14%;
+  }
+
+  .section6Main h2 {
+    font-size: 38px;
+  }
+  .flexTC {
+    flex-direction: column;
+  }
+  .section6Main > p {
+    padding: 10px;
+  }
+
+  .table-container {
+    width: 100px;
+  }
+
+  .icon {
+    display: none;
+  }
+}
