@@ -664,4 +664,28 @@ footer {
   /* FOOTER */
 }
 
+@media screen and (max-width: 1024px) {
+  .cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .navbar .nav-links ul li a {
+    font-size: 9px;
+  }
+
+  .donationBtn {
+    padding: 10px 23px;
+  }
+
+  header .logo {
+    width: 100px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .card {
+    width: 287px;
+  }
+}
+
 /* RESPONSIVE  */

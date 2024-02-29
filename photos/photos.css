@@ -590,7 +590,13 @@ footer {
   }
 
   /* Main */
+  .gallery-item-container1 {
+    grid-template-columns: repeat(2, 1fr);
+  }
 
+  .gallery-item-container2 {
+    grid-template-columns: repeat(2, 1fr);
+  }
   header .logo {
     width: 100px;
   }
@@ -884,5 +890,19 @@ footer {
 
   .icon {
     display: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .navbar .nav-links ul li a {
+    font-size: 12px;
+  }
+
+  .gallery-item-container1 {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .gallery-item-container2 {
+    grid-template-columns: repeat(1, 1fr);
   }
 }
